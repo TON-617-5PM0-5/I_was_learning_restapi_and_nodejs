@@ -3,21 +3,6 @@ const chat_box = document.getElementById("chat-box");
 const name_box = document.getElementById("name-box");
 const message_box = document.getElementById("message-box");
 
-const test = 
-{
-    name: "dura-cella",
-    time: "23:59 05.10.23",
-    message: "you know I just wanna buy an electric bataries from duracell©, pls make this happen"
-};
-
-/*
-{
-    id: #;
-    name: "";
-    time: "";
-    message: "";
-}
-*/
 function create_json(_name, _message){
     let result =  {
         name: _name,
