@@ -23,15 +23,7 @@ function send_message(){
     request.responseType = 'json';
     request.setRequestHeader('Content-Type', 'application/json');
     request.onload = () => {
-        if (request.status === 200) {
-            const data = request.response;
-            show_message({
-                name: "debug",
-                time: "??:??:?? ??.??",
-                message: "Sending was successful"
-            });
-        }
-        else {
+        if (request.status !== 200) {
             show_message({
                 name: "system",
                 time: "??:??:?? ??.??",
